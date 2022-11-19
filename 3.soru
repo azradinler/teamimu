@@ -1,0 +1,17 @@
+#Bubble Sıralama Algoritması [Python]
+def bubbleSort(liste):
+    for i in range(len(liste)):
+        for j in range(len(liste) - i -1):
+            if liste[j] > liste[j+1]:
+                liste[j], liste[j + 1] = liste[j + 1],liste[j]
+
+
+elemanSayi = int(input("Eleman sayısını girin: "))
+liste = []
+
+for i in range(elemanSayi):
+    liste.append(input())
+
+bubbleSort(liste)
+
+print(liste)
